@@ -1,0 +1,746 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>Shopping_AbstractResponseType Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PicoEBayShoppingClient </a></h1>
+				<a id="developerHome" href="../index.html">LeanSoft Technology</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">Shopping_AbstractResponseType Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/ack">&nbsp;&nbsp;&nbsp;&nbsp;ack</option>
+	
+	<option value="//api/name/any">&nbsp;&nbsp;&nbsp;&nbsp;any</option>
+	
+	<option value="//api/name/build">&nbsp;&nbsp;&nbsp;&nbsp;build</option>
+	
+	<option value="//api/name/correlationID">&nbsp;&nbsp;&nbsp;&nbsp;correlationID</option>
+	
+	<option value="//api/name/errors">&nbsp;&nbsp;&nbsp;&nbsp;errors</option>
+	
+	<option value="//api/name/timestamp">&nbsp;&nbsp;&nbsp;&nbsp;timestamp</option>
+	
+	<option value="//api/name/version">&nbsp;&nbsp;&nbsp;&nbsp;version</option>
+	
+	
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ack">ack</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/any">any</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/build">build</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/correlationID">correlationID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errors">errors</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/timestamp">timestamp</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/version">version</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="Shopping_AbstractResponseType Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">Shopping_AbstractResponseType Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">PicoBindable</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">Shopping_AbstractResponseType.h<br />Shopping_AbstractResponseType.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Base type definition of a response payload that can carry <a href="#//api/name/any">any</a><br/>
+type of payload content with following optional elements:<br><br/>
+- <a href="#//api/name/timestamp">timestamp</a> of response message<br><br/>
+- application-level acknowledgement<br><br/>
+- application-level (business-level) <a href="#//api/name/errors">errors</a> and warnings</p>
+
+<p>@ingroup ShoppingInterface</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/timestamp">&nbsp;&nbsp;timestamp</a></code>
+		<span class="tooltip"><p>This value represents the date and time when eBay processed the<br/>
+request. The time zone of this value is <a href="types/simpleTypes.html#dateTime">GMT</a><br/>
+and the format is the<br/>
+ISO 8601 date and time format (YYYY-MM-DDTHH:MM:SS.SSSZ).<br/>
+See the &ldquo;dateTime&rdquo; type for information about this<br/>
+time format and converting to and from the GMT time zone.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/ack">&nbsp;&nbsp;ack</a></code>
+		<span class="tooltip"><p>Indicates whether the call was successfully processed by eBay.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errors">&nbsp;&nbsp;errors</a></code>
+		<span class="tooltip"><p>A list of application-level errors or warnings (if <a href="#//api/name/any">any</a>) that were raised<br/>
+when eBay processed the request. <br><br/>
+<br><br/>
+Application-level errors occur due to<br/>
+problems with business-level data on the client side or on the eBay<br/>
+server side. For example, an error would occur if the request contains<br/>
+an invalid combination of fields, or it is missing a required field,<br/>
+or the value of the field is not recognized. An error could also occur<br/>
+if eBay encountered a problem in our internal business logic while<br/>
+processing the request.<br><br/>
+<br><br/>
+Only returned if there were warnings or errors.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/build">&nbsp;&nbsp;build</a></code>
+		<span class="tooltip"><p>This refers to the particular software build that eBay used when<br/>
+processing the request and generating the response. This includes the<br/>
+<a href="#//api/name/version">version</a> number plus additional information. eBay Developer Support may<br/>
+request the build information when helping you resolve technical issues.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/version">&nbsp;&nbsp;version</a></code>
+		<span class="tooltip"><p>The release version that eBay used to process the request.<br/>
+<br><br/>
+<br><br/>
+<span class="tablenote"><b>Note:</b><br/>
+This is usually the latest release version, as specified in the<br/>
+release notes. (eBay releases the API to international sites<br/>
+about a week after we release it to the US site.) </span><br><br/>
+<br><br/>
+If a field in the response returns the token &ldquo;CustomCode&rdquo;, it usually<br/>
+means that the field is a code type (a token or enumeration),<br/>
+and that in your request URL (or HTTP header) you specified a<br/>
+version that is older than the version in which the token was added<br/>
+to the call.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/correlationID">&nbsp;&nbsp;correlationID</a></code>
+		<span class="tooltip"><p>If you pass a value in MessageID in a request, we will return the same<br/>
+value in CorrelationID in the response. You can use this for tracking<br/>
+that a response is returned for every request and to match particular<br/>
+responses to particular requests. Only returned if MessageID was used.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/any">&nbsp;&nbsp;any</a></code>
+		<span class="tooltip"><p>(public property)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/ack" title="ack"></a>
+	<h3 class="subsubtitle method-title">ack</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Indicates whether the call was successfully processed by eBay.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *ack</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Indicates whether the call was successfully processed by eBay.</p>
+
+<p>type: string constant in Shopping_AckCodeType.h</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_AbstractResponseType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/any" title="any"></a>
+	<h3 class="subsubtitle method-title">any</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(public property)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *any</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>(public property)</p>
+
+<p>entry type : PicoAnyElement, wrapper for primitive anyelement</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_AbstractResponseType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/build" title="build"></a>
+	<h3 class="subsubtitle method-title">build</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This refers to the particular software build that eBay used when<br/>
+processing the request and generating the response. This includes the<br/>
+<a href="#//api/name/version">version</a> number plus additional information. eBay Developer Support may<br/>
+request the build information when helping you resolve technical issues.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *build</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This refers to the particular software build that eBay used when<br/>
+processing the request and generating the response. This includes the<br/>
+<a href="#//api/name/version">version</a> number plus additional information. eBay Developer Support may<br/>
+request the build information when helping you resolve technical issues.</p>
+
+<p>type : NSString, wrapper for primitive string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_AbstractResponseType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/correlationID" title="correlationID"></a>
+	<h3 class="subsubtitle method-title">correlationID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If you pass a value in MessageID in a request, we will return the same<br/>
+value in CorrelationID in the response. You can use this for tracking<br/>
+that a response is returned for every request and to match particular<br/>
+responses to particular requests. Only returned if MessageID was used.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *correlationID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If you pass a value in MessageID in a request, we will return the same<br/>
+value in CorrelationID in the response. You can use this for tracking<br/>
+that a response is returned for every request and to match particular<br/>
+responses to particular requests. Only returned if MessageID was used.</p>
+
+<p>type : NSString, wrapper for primitive string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_AbstractResponseType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/errors" title="errors"></a>
+	<h3 class="subsubtitle method-title">errors</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A list of application-level errors or warnings (if <a href="#//api/name/any">any</a>) that were raised<br/>
+when eBay processed the request. <br><br/>
+<br><br/>
+Application-level errors occur due to<br/>
+problems with business-level data on the client side or on the eBay<br/>
+server side. For example, an error would occur if the request contains<br/>
+an invalid combination of fields, or it is missing a required field,<br/>
+or the value of the field is not recognized. An error could also occur<br/>
+if eBay encountered a problem in our internal business logic while<br/>
+processing the request.<br><br/>
+<br><br/>
+Only returned if there were warnings or errors.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *errors</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A list of application-level errors or warnings (if <a href="#//api/name/any">any</a>) that were raised<br/>
+when eBay processed the request. <br><br/>
+<br><br/>
+Application-level errors occur due to<br/>
+problems with business-level data on the client side or on the eBay<br/>
+server side. For example, an error would occur if the request contains<br/>
+an invalid combination of fields, or it is missing a required field,<br/>
+or the value of the field is not recognized. An error could also occur<br/>
+if eBay encountered a problem in our internal business logic while<br/>
+processing the request.<br><br/>
+<br><br/>
+Only returned if there were warnings or errors.</p>
+
+<p>entry type : class <a href="../Classes/Shopping_ErrorType.html">Shopping_ErrorType</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_AbstractResponseType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/timestamp" title="timestamp"></a>
+	<h3 class="subsubtitle method-title">timestamp</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This value represents the date and time when eBay processed the<br/>
+request. The time zone of this value is <a href="types/simpleTypes.html#dateTime">GMT</a><br/>
+and the format is the<br/>
+ISO 8601 date and time format (YYYY-MM-DDTHH:MM:SS.SSSZ).<br/>
+See the &ldquo;dateTime&rdquo; type for information about this<br/>
+time format and converting to and from the GMT time zone.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSDate *timestamp</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This value represents the date and time when eBay processed the<br/>
+request. The time zone of this value is <a href="types/simpleTypes.html#dateTime">GMT</a><br/>
+and the format is the<br/>
+ISO 8601 date and time format (YYYY-MM-DDTHH:MM:SS.SSSZ).<br/>
+See the &ldquo;dateTime&rdquo; type for information about this<br/>
+time format and converting to and from the GMT time zone.</p>
+
+<p>type : NSDate, wrapper for primitive date</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_AbstractResponseType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/version" title="version"></a>
+	<h3 class="subsubtitle method-title">version</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The release version that eBay used to process the request.<br/>
+<br><br/>
+<br><br/>
+<span class="tablenote"><b>Note:</b><br/>
+This is usually the latest release version, as specified in the<br/>
+release notes. (eBay releases the API to international sites<br/>
+about a week after we release it to the US site.) </span><br><br/>
+<br><br/>
+If a field in the response returns the token &ldquo;CustomCode&rdquo;, it usually<br/>
+means that the field is a code type (a token or enumeration),<br/>
+and that in your request URL (or HTTP header) you specified a<br/>
+version that is older than the version in which the token was added<br/>
+to the call.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *version</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The release version that eBay used to process the request.<br/>
+<br><br/>
+<br><br/>
+<span class="tablenote"><b>Note:</b><br/>
+This is usually the latest release version, as specified in the<br/>
+release notes. (eBay releases the API to international sites<br/>
+about a week after we release it to the US site.) </span><br><br/>
+<br><br/>
+If a field in the response returns the token &ldquo;CustomCode&rdquo;, it usually<br/>
+means that the field is a code type (a token or enumeration),<br/>
+and that in your request URL (or HTTP header) you specified a<br/>
+version that is older than the version in which the token was added<br/>
+to the call.</p>
+
+<p>type : NSString, wrapper for primitive string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_AbstractResponseType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 LeanSoft Technology. All rights reserved. (Last updated: 2013-03-30)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

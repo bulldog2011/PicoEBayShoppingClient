@@ -1,0 +1,677 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>Shopping_ExternalProductIDType Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PicoEBayShoppingClient </a></h1>
+				<a id="developerHome" href="../index.html">LeanSoft Technology</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">Shopping_ExternalProductIDType Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/alternateValue">&nbsp;&nbsp;&nbsp;&nbsp;alternateValue</option>
+	
+	<option value="//api/name/any">&nbsp;&nbsp;&nbsp;&nbsp;any</option>
+	
+	<option value="//api/name/returnSearchResultOnDuplicates">&nbsp;&nbsp;&nbsp;&nbsp;returnSearchResultOnDuplicates</option>
+	
+	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;type</option>
+	
+	<option value="//api/name/value">&nbsp;&nbsp;&nbsp;&nbsp;value</option>
+	
+	
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/alternateValue">alternateValue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/any">any</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/returnSearchResultOnDuplicates">returnSearchResultOnDuplicates</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/value">value</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="Shopping_ExternalProductIDType Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">Shopping_ExternalProductIDType Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">PicoBindable</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">Shopping_ExternalProductIDType.h<br />Shopping_ExternalProductIDType.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Contains an ISBN <a href="#//api/name/value">value</a>, EAN <a href="#//api/name/value">value</a>, UPC <a href="#//api/name/value">value</a>, ticket keywords, or eBay<br/>
+catalog product ID, plus other meta-data. For event tickets, this <a href="#//api/name/type">type</a><br/>
+can contain a set of keywords that uniquely identify the product. Only<br/>
+applicable to certain categories that support Pre-filled Item<br/>
+Information.</p>
+
+<p>@ingroup ShoppingInterface</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/value">&nbsp;&nbsp;value</a></code>
+		<span class="tooltip"><p>An industry-standard value that uniquely identifies the product. The<br/>
+valid values are dictated by the Type property.<br/>
+Required if Type is specified.<br/>
+Max length 13 for ISBN, 13 for EAN,<br/>
+12 for UPC, and 4000 for ProductID. No max length for ticket keywords<br/>
+(but passing too much data can result in &ldquo;no match found"<br/>
+errors).<br><br/>
+<br><br/>
+<b>For AddItem and related calls:</b><br/>
+If the primary and secondary categories are both catalog-enabled,<br/>
+the value must apply to the primary category.<br/>
+Event tickets listings support a set of keywords<br/>
+that uniquely identify the listing. The ticket keywords specify the<br/>
+event name (the title shown on the ticket), venue name, and event<br/>
+date and time. See the eBay Web Services guide for more information<br/>
+and validation rules. For convenience, you can pass an eBay product ID<br/>
+as input (not limited to media categories).<br><br/>
+<br><br/>
+Required for Half.com listing use cases, and this can only be an<br/>
+ISBN, UPC, or EAN value.<br><br/>
+<br><br/>
+<b>For FindProducts input only:</b><br/>
+Only ISBN, EAN, and UPC values are currently supported as<br/>
+input.<br><br/>
+<br><br/>
+<b>For FindProducts and GetSellerPayments output only:</b><br/>
+Also see AlternateValue, which is returned if the catalog defines multiple<br/>
+ISBN values (e.g., one for ISBN-13 and one for ISBN-10). Please note that<br/>
+some catalogs return ISBN values that are not 10 or 13 characters, and some<br/>
+values contain non-alphanumeric symbols (e.g., $).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/returnSearchResultOnDuplicates">&nbsp;&nbsp;returnSearchResultOnDuplicates</a></code>
+		<span class="tooltip"><p>Applicable for listing use cases only (not buy-side searching).<br/>
+Indicates what eBay should do if more than one product matches<br/>
+the <a href="#//api/name/value">value</a> passed in Value. Only takes effect when more than one<br/>
+match is found. If true, the response should include an error<br/>
+and all matching product IDs. If false, the response should include<br/>
+an error but should not return the matching product IDs.<br/>
+This field is also applicable when listing Half.com items.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
+		<span class="tooltip"><p>The kind of identifier being used. The choices listed are for requests, are<br/>
+are required if Value is specified. For Half.com listing use cases, only<br/>
+ISBN, UPC, and EAN are supported.<br><br/>
+<br><br/>
+FindProducts supports ISBN, UPC, and EAN.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/alternateValue">&nbsp;&nbsp;alternateValue</a></code>
+		<span class="tooltip"><p>An industry-standard <a href="#//api/name/value">value</a> that provides an alternate identification for<br/>
+the product, if <a href="#//api/name/any">any</a>. Currently, this only returns an alternate ISBN<br/>
+<a href="#//api/name/value">value</a>. If the catalog defines both an ISBN-13 and ISBN-10,<br/>
+then the ISBN-13 is returned in Value and the ISBN-10 is returned in<br/>
+AlternateValue. (That is, the ISBN-13 is considered to be the preferred<br/>
+identifier.) If the catalog only defines one ISBN, it is returned in<br/>
+Value (and AlternateValue is not returned). Please note that some<br/>
+catalogs return ISBN values that are not 10 or 13 characters,<br/>
+and some values contain non-alphanumeric symbols (e.g., $).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/any">&nbsp;&nbsp;any</a></code>
+		<span class="tooltip"><p>(public property)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/alternateValue" title="alternateValue"></a>
+	<h3 class="subsubtitle method-title">alternateValue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An industry-standard <a href="#//api/name/value">value</a> that provides an alternate identification for<br/>
+the product, if <a href="#//api/name/any">any</a>. Currently, this only returns an alternate ISBN<br/>
+<a href="#//api/name/value">value</a>. If the catalog defines both an ISBN-13 and ISBN-10,<br/>
+then the ISBN-13 is returned in Value and the ISBN-10 is returned in<br/>
+AlternateValue. (That is, the ISBN-13 is considered to be the preferred<br/>
+identifier.) If the catalog only defines one ISBN, it is returned in<br/>
+Value (and AlternateValue is not returned). Please note that some<br/>
+catalogs return ISBN values that are not 10 or 13 characters,<br/>
+and some values contain non-alphanumeric symbols (e.g., $).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *alternateValue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>An industry-standard <a href="#//api/name/value">value</a> that provides an alternate identification for<br/>
+the product, if <a href="#//api/name/any">any</a>. Currently, this only returns an alternate ISBN<br/>
+<a href="#//api/name/value">value</a>. If the catalog defines both an ISBN-13 and ISBN-10,<br/>
+then the ISBN-13 is returned in Value and the ISBN-10 is returned in<br/>
+AlternateValue. (That is, the ISBN-13 is considered to be the preferred<br/>
+identifier.) If the catalog only defines one ISBN, it is returned in<br/>
+Value (and AlternateValue is not returned). Please note that some<br/>
+catalogs return ISBN values that are not 10 or 13 characters,<br/>
+and some values contain non-alphanumeric symbols (e.g., $).</p>
+
+<p>entry <a href="#//api/name/type">type</a> : NSString, wrapper for primitive string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_ExternalProductIDType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/any" title="any"></a>
+	<h3 class="subsubtitle method-title">any</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(public property)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *any</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>(public property)</p>
+
+<p>entry <a href="#//api/name/type">type</a> : PicoAnyElement, wrapper for primitive anyelement</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_ExternalProductIDType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/returnSearchResultOnDuplicates" title="returnSearchResultOnDuplicates"></a>
+	<h3 class="subsubtitle method-title">returnSearchResultOnDuplicates</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Applicable for listing use cases only (not buy-side searching).<br/>
+Indicates what eBay should do if more than one product matches<br/>
+the <a href="#//api/name/value">value</a> passed in Value. Only takes effect when more than one<br/>
+match is found. If true, the response should include an error<br/>
+and all matching product IDs. If false, the response should include<br/>
+an error but should not return the matching product IDs.<br/>
+This field is also applicable when listing Half.com items.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *returnSearchResultOnDuplicates</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Applicable for listing use cases only (not buy-side searching).<br/>
+Indicates what eBay should do if more than one product matches<br/>
+the <a href="#//api/name/value">value</a> passed in Value. Only takes effect when more than one<br/>
+match is found. If true, the response should include an error<br/>
+and all matching product IDs. If false, the response should include<br/>
+an error but should not return the matching product IDs.<br/>
+This field is also applicable when listing Half.com items.</p>
+
+<p><a href="#//api/name/type">type</a> : NSNumber, wrapper for primitive bool</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_ExternalProductIDType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="subsubtitle method-title">type</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The kind of identifier being used. The choices listed are for requests, are<br/>
+are required if Value is specified. For Half.com listing use cases, only<br/>
+ISBN, UPC, and EAN are supported.<br><br/>
+<br><br/>
+FindProducts supports ISBN, UPC, and EAN.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *type</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The kind of identifier being used. The choices listed are for requests, are<br/>
+are required if Value is specified. For Half.com listing use cases, only<br/>
+ISBN, UPC, and EAN are supported.<br><br/>
+<br><br/>
+FindProducts supports ISBN, UPC, and EAN.</p>
+
+<p>type: string constant in Shopping_ExternalProductCodeType.h</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_ExternalProductIDType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/value" title="value"></a>
+	<h3 class="subsubtitle method-title">value</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An industry-standard value that uniquely identifies the product. The<br/>
+valid values are dictated by the Type property.<br/>
+Required if Type is specified.<br/>
+Max length 13 for ISBN, 13 for EAN,<br/>
+12 for UPC, and 4000 for ProductID. No max length for ticket keywords<br/>
+(but passing too much data can result in &ldquo;no match found"<br/>
+errors).<br><br/>
+<br><br/>
+<b>For AddItem and related calls:</b><br/>
+If the primary and secondary categories are both catalog-enabled,<br/>
+the value must apply to the primary category.<br/>
+Event tickets listings support a set of keywords<br/>
+that uniquely identify the listing. The ticket keywords specify the<br/>
+event name (the title shown on the ticket), venue name, and event<br/>
+date and time. See the eBay Web Services guide for more information<br/>
+and validation rules. For convenience, you can pass an eBay product ID<br/>
+as input (not limited to media categories).<br><br/>
+<br><br/>
+Required for Half.com listing use cases, and this can only be an<br/>
+ISBN, UPC, or EAN value.<br><br/>
+<br><br/>
+<b>For FindProducts input only:</b><br/>
+Only ISBN, EAN, and UPC values are currently supported as<br/>
+input.<br><br/>
+<br><br/>
+<b>For FindProducts and GetSellerPayments output only:</b><br/>
+Also see AlternateValue, which is returned if the catalog defines multiple<br/>
+ISBN values (e.g., one for ISBN-13 and one for ISBN-10). Please note that<br/>
+some catalogs return ISBN values that are not 10 or 13 characters, and some<br/>
+values contain non-alphanumeric symbols (e.g., $).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *value</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>An industry-standard value that uniquely identifies the product. The<br/>
+valid values are dictated by the Type property.<br/>
+Required if Type is specified.<br/>
+Max length 13 for ISBN, 13 for EAN,<br/>
+12 for UPC, and 4000 for ProductID. No max length for ticket keywords<br/>
+(but passing too much data can result in &ldquo;no match found"<br/>
+errors).<br><br/>
+<br><br/>
+<b>For AddItem and related calls:</b><br/>
+If the primary and secondary categories are both catalog-enabled,<br/>
+the value must apply to the primary category.<br/>
+Event tickets listings support a set of keywords<br/>
+that uniquely identify the listing. The ticket keywords specify the<br/>
+event name (the title shown on the ticket), venue name, and event<br/>
+date and time. See the eBay Web Services guide for more information<br/>
+and validation rules. For convenience, you can pass an eBay product ID<br/>
+as input (not limited to media categories).<br><br/>
+<br><br/>
+Required for Half.com listing use cases, and this can only be an<br/>
+ISBN, UPC, or EAN value.<br><br/>
+<br><br/>
+<b>For FindProducts input only:</b><br/>
+Only ISBN, EAN, and UPC values are currently supported as<br/>
+input.<br><br/>
+<br><br/>
+<b>For FindProducts and GetSellerPayments output only:</b><br/>
+Also see AlternateValue, which is returned if the catalog defines multiple<br/>
+ISBN values (e.g., one for ISBN-13 and one for ISBN-10). Please note that<br/>
+some catalogs return ISBN values that are not 10 or 13 characters, and some<br/>
+values contain non-alphanumeric symbols (e.g., $).</p>
+
+<p><a href="#//api/name/type">type</a> : NSString, wrapper for primitive string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_ExternalProductIDType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 LeanSoft Technology. All rights reserved. (Last updated: 2013-03-30)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

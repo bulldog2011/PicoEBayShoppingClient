@@ -1,0 +1,586 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>Shopping_FindPopularItemsRequestType Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PicoEBayShoppingClient </a></h1>
+				<a id="developerHome" href="../index.html">LeanSoft Technology</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">Shopping_FindPopularItemsRequestType Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/categoryID">&nbsp;&nbsp;&nbsp;&nbsp;categoryID</option>
+	
+	<option value="//api/name/categoryIDExclude">&nbsp;&nbsp;&nbsp;&nbsp;categoryIDExclude</option>
+	
+	<option value="//api/name/maxEntries">&nbsp;&nbsp;&nbsp;&nbsp;maxEntries</option>
+	
+	<option value="//api/name/queryKeywords">&nbsp;&nbsp;&nbsp;&nbsp;queryKeywords</option>
+	
+	
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/categoryID">categoryID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/categoryIDExclude">categoryIDExclude</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxEntries">maxEntries</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/queryKeywords">queryKeywords</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="Shopping_FindPopularItemsRequestType Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">Shopping_FindPopularItemsRequestType Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/Shopping_AbstractRequestType.html">Shopping_AbstractRequestType</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">Shopping_FindPopularItemsRequestType.h<br />Shopping_FindPopularItemsRequestType.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Find popular items</p>
+
+<p>@ingroup ShoppingInterface</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/categoryID">&nbsp;&nbsp;categoryID</a></code>
+		<span class="tooltip"><p>Specify CategoryID to restrict your query to a specific category.<br/>
+Up to 10 categories may be specified.<br/>
+If you are using a URL, and you want to specify<br/>
+more than one CategoryID, separate the values with a comma.<br/>
+For example, to specify Fiction Books and<br/>
+Children&rsquo;s Books, specify CategoryID=377,279.<br/>
+<br><br/>
+<br><br/>
+If the specified category ID doesn&rsquo;t match an existing category<br/>
+for the site, an invalid-category error message is returned.<br/>
+To determine valid categories:<br><br/>
+Use <b>findItemsAdvanced</b> from the <a href="[http://www.developer.ebay.com/DevZone/finding/CallRef/index.html](http://www.developer.ebay.com/DevZone/finding/CallRef/index.html)">Finding API</a> with CategoryHistogram value in the OutputSelector field<br/>
+to retrieve matching categories. Then make another<br/>
+<b>findItemsAdvanced</b> call with the ID of a matching category.<br/>
+<br><br/>
+<br><br/>
+CategoryID can be used in combination with QueryKeywords and CategoryIDExclude.<br/>
+To retrieve the most popular items across all categorys, do not submit a CategoryID.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/queryKeywords">&nbsp;&nbsp;queryKeywords</a></code>
+		<span class="tooltip"><p>A query that specifies a string for searching titles of items on eBay.<br/>
+If you are using a URL, then to search for multiple words,<br/>
+use &ldquo;%20&rdquo;. For example, use Harry%20Potter to search for items<br/>
+containing those words in any order.<br/>
+You can incorporate wildcards into a multi-word search, as in the following: ap<em>%20ip</em>.<br/>
+The words &ldquo;and&rdquo; and &ldquo;or&rdquo; are treated like any other word. Only use &ldquo;and&rdquo;,<br/>
+&ldquo;or&rdquo;, or &ldquo;the&rdquo; if you are searching for listings containing these words.<br/>
+QueryKeywords can be used in combination with CategoryID and CategoryIDExclude.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/categoryIDExclude">&nbsp;&nbsp;categoryIDExclude</a></code>
+		<span class="tooltip"><p>Specify this value if you want search results to be filtered so that the popular<br/>
+items returned do not include items that belong to a specific category.<br/>
+<br><br/>
+<br><br/>
+CategoryIDExclude is an unbounded field.<br/>
+If you are using a URL, you can separate multiple values with a comma.<br/>
+For example, if you want to specify<br/>
+Records and SuperAudio CDs, specify<br/>
+CategoryIDExclude=306,46354.<br/>
+<br><br/>
+<br><br/>
+If you use CategoryIDExclude, it must be used in with QueryKeywords or CategoryID.<br/>
+The CategoryIDExclude input field need not be used if you specified the<br/>
+CategoryID input field.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maxEntries">&nbsp;&nbsp;maxEntries</a></code>
+		<span class="tooltip"><p>   Specifies the maximum number of entries to return in a single call.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/categoryID" title="categoryID"></a>
+	<h3 class="subsubtitle method-title">categoryID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specify CategoryID to restrict your query to a specific category.<br/>
+Up to 10 categories may be specified.<br/>
+If you are using a URL, and you want to specify<br/>
+more than one CategoryID, separate the values with a comma.<br/>
+For example, to specify Fiction Books and<br/>
+Children&rsquo;s Books, specify CategoryID=377,279.<br/>
+<br><br/>
+<br><br/>
+If the specified category ID doesn&rsquo;t match an existing category<br/>
+for the site, an invalid-category error message is returned.<br/>
+To determine valid categories:<br><br/>
+Use <b>findItemsAdvanced</b> from the <a href="[http://www.developer.ebay.com/DevZone/finding/CallRef/index.html](http://www.developer.ebay.com/DevZone/finding/CallRef/index.html)">Finding API</a> with CategoryHistogram value in the OutputSelector field<br/>
+to retrieve matching categories. Then make another<br/>
+<b>findItemsAdvanced</b> call with the ID of a matching category.<br/>
+<br><br/>
+<br><br/>
+CategoryID can be used in combination with QueryKeywords and CategoryIDExclude.<br/>
+To retrieve the most popular items across all categorys, do not submit a CategoryID.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *categoryID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Specify CategoryID to restrict your query to a specific category.<br/>
+Up to 10 categories may be specified.<br/>
+If you are using a URL, and you want to specify<br/>
+more than one CategoryID, separate the values with a comma.<br/>
+For example, to specify Fiction Books and<br/>
+Children&rsquo;s Books, specify CategoryID=377,279.<br/>
+<br><br/>
+<br><br/>
+If the specified category ID doesn&rsquo;t match an existing category<br/>
+for the site, an invalid-category error message is returned.<br/>
+To determine valid categories:<br><br/>
+Use <b>findItemsAdvanced</b> from the <a href="[http://www.developer.ebay.com/DevZone/finding/CallRef/index.html](http://www.developer.ebay.com/DevZone/finding/CallRef/index.html)">Finding API</a> with CategoryHistogram value in the OutputSelector field<br/>
+to retrieve matching categories. Then make another<br/>
+<b>findItemsAdvanced</b> call with the ID of a matching category.<br/>
+<br><br/>
+<br><br/>
+CategoryID can be used in combination with QueryKeywords and CategoryIDExclude.<br/>
+To retrieve the most popular items across all categorys, do not submit a CategoryID.</p>
+
+<p>entry type : NSString, wrapper for primitive string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_FindPopularItemsRequestType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/categoryIDExclude" title="categoryIDExclude"></a>
+	<h3 class="subsubtitle method-title">categoryIDExclude</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specify this value if you want search results to be filtered so that the popular<br/>
+items returned do not include items that belong to a specific category.<br/>
+<br><br/>
+<br><br/>
+CategoryIDExclude is an unbounded field.<br/>
+If you are using a URL, you can separate multiple values with a comma.<br/>
+For example, if you want to specify<br/>
+Records and SuperAudio CDs, specify<br/>
+CategoryIDExclude=306,46354.<br/>
+<br><br/>
+<br><br/>
+If you use CategoryIDExclude, it must be used in with QueryKeywords or CategoryID.<br/>
+The CategoryIDExclude input field need not be used if you specified the<br/>
+CategoryID input field.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *categoryIDExclude</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Specify this value if you want search results to be filtered so that the popular<br/>
+items returned do not include items that belong to a specific category.<br/>
+<br><br/>
+<br><br/>
+CategoryIDExclude is an unbounded field.<br/>
+If you are using a URL, you can separate multiple values with a comma.<br/>
+For example, if you want to specify<br/>
+Records and SuperAudio CDs, specify<br/>
+CategoryIDExclude=306,46354.<br/>
+<br><br/>
+<br><br/>
+If you use CategoryIDExclude, it must be used in with QueryKeywords or CategoryID.<br/>
+The CategoryIDExclude input field need not be used if you specified the<br/>
+CategoryID input field.</p>
+
+<p>entry type : NSString, wrapper for primitive string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_FindPopularItemsRequestType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maxEntries" title="maxEntries"></a>
+	<h3 class="subsubtitle method-title">maxEntries</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>   Specifies the maximum number of entries to return in a single call.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *maxEntries</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>   Specifies the maximum number of entries to return in a single call.</p>
+
+<p>type : NSNumber, wrapper for primitive int</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_FindPopularItemsRequestType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/queryKeywords" title="queryKeywords"></a>
+	<h3 class="subsubtitle method-title">queryKeywords</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A query that specifies a string for searching titles of items on eBay.<br/>
+If you are using a URL, then to search for multiple words,<br/>
+use &ldquo;%20&rdquo;. For example, use Harry%20Potter to search for items<br/>
+containing those words in any order.<br/>
+You can incorporate wildcards into a multi-word search, as in the following: ap<em>%20ip</em>.<br/>
+The words &ldquo;and&rdquo; and &ldquo;or&rdquo; are treated like any other word. Only use &ldquo;and&rdquo;,<br/>
+&ldquo;or&rdquo;, or &ldquo;the&rdquo; if you are searching for listings containing these words.<br/>
+QueryKeywords can be used in combination with CategoryID and CategoryIDExclude.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *queryKeywords</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A query that specifies a string for searching titles of items on eBay.<br/>
+If you are using a URL, then to search for multiple words,<br/>
+use &ldquo;%20&rdquo;. For example, use Harry%20Potter to search for items<br/>
+containing those words in any order.<br/>
+You can incorporate wildcards into a multi-word search, as in the following: ap<em>%20ip</em>.<br/>
+The words &ldquo;and&rdquo; and &ldquo;or&rdquo; are treated like any other word. Only use &ldquo;and&rdquo;,<br/>
+&ldquo;or&rdquo;, or &ldquo;the&rdquo; if you are searching for listings containing these words.<br/>
+QueryKeywords can be used in combination with CategoryID and CategoryIDExclude.</p>
+
+<p>type : NSString, wrapper for primitive string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_FindPopularItemsRequestType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 LeanSoft Technology. All rights reserved. (Last updated: 2013-03-30)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

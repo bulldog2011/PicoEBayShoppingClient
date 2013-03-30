@@ -1,0 +1,753 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>Shopping_GetSingleItemRequestType Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PicoEBayShoppingClient </a></h1>
+				<a id="developerHome" href="../index.html">LeanSoft Technology</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">Shopping_GetSingleItemRequestType Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/includeSelector">&nbsp;&nbsp;&nbsp;&nbsp;includeSelector</option>
+	
+	<option value="//api/name/itemID">&nbsp;&nbsp;&nbsp;&nbsp;itemID</option>
+	
+	<option value="//api/name/variationSKU">&nbsp;&nbsp;&nbsp;&nbsp;variationSKU</option>
+	
+	<option value="//api/name/variationSpecifics">&nbsp;&nbsp;&nbsp;&nbsp;variationSpecifics</option>
+	
+	
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/includeSelector">includeSelector</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemID">itemID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/variationSKU">variationSKU</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/variationSpecifics">variationSpecifics</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="Shopping_GetSingleItemRequestType Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">Shopping_GetSingleItemRequestType Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/Shopping_AbstractRequestType.html">Shopping_AbstractRequestType</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">Shopping_GetSingleItemRequestType.h<br />Shopping_GetSingleItemRequestType.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Retrieves publicly available data for a single listing.<br/>
+Use this call to retrieve most of the information that is visible<br/>
+on a listing&rsquo;s View Item page on the eBay Web site,<br/>
+such as title, description, prices, basic seller and bidder information,<br/>
+and other details about the listing.Also returns basic<br/>
+shipping costs. For more shipping details, use GetShippingCosts.</p>
+
+<p>@ingroup ShoppingInterface</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemID">&nbsp;&nbsp;itemID</a></code>
+		<span class="tooltip"><p>The item ID that uniquely identifies the item listing<br/>
+for which to retrieve the data.<br><br/>
+<br><br/>
+You can determine an item&rsquo;s ID by calling findItemsAdvanced (&lt;a<br/>
+href=&ldquo;<a href="http://www.developer.ebay.com/DevZone/finding/CallRef/index.html">http://www.developer.ebay.com/DevZone/finding/CallRef/index.html</a>&rdquo;</p>
+
+<blockquote><p>Finding API</a>) or from the  eBay Web site.</p></blockquote></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/variationSKU">&nbsp;&nbsp;variationSKU</a></code>
+		<span class="tooltip"><p>Variation-level SKU that uniquely identifes a variation within<br/>
+the listing identified by ItemID. Only applicable when the<br/>
+seller included variation-level SKU (Variation.SKU)<br/>
+values. Retrieves all the usual Item fields, but limits the<br/>
+Variations content to the specified variation.<br/>
+If not specified, the response includes all variations.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/variationSpecifics">&nbsp;&nbsp;variationSpecifics</a></code>
+		<span class="tooltip"><p>Name-value pairs that identify one or more variations within the<br/>
+listing identified by ItemID. Only applicable when the seller<br/>
+listed the item with variations. Retrieves all the usual Item<br/>
+fields, but limits the Variations content to the specified<br/>
+variation(s). If the specified pairs do not match any variation,<br/>
+eBay returns all variations.<br><br/>
+<br><br/>
+To retrieve only one variation, specify the full set of<br/>
+name/value pairs that match all the name-value pairs of one<br/>
+variation. <br><br/>
+<br><br/>
+To retrieve multiple variations (using a wildcard),<br/>
+specify one or more name/value pairs that partially match the<br/>
+desired variations. For example, if the listing contains<br/>
+variations for shirts in different colors and sizes, specify<br/>
+Color as Red (and no other name/value pairs) to retrieve<br/>
+all the red shirts in all sizes (but no other colors).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/includeSelector">&nbsp;&nbsp;includeSelector</a></code>
+		<span class="tooltip"><p>Defines standard subsets of fields to return within the<br/>
+response.<br><br/>
+<br><br/>
+If you don&rsquo;t specify this field, the call returns a default<br/>
+set of fields (see the &ldquo;Detail Controls&rdquo; link below). If you specify this field, the additional<br/>
+fields you retrieve can affect the call&rsquo;s response time<br/>
+(performance).<br><br/>
+<br><br/>
+<b>Applicable values</b>:</p>
+
+<p class="ename">&bull;&nbsp;&nbsp; Details</p>
+
+
+<p>
+   <p class="edef">Include most available fields in the<br/>
+   response (except fields that significantly affect the call's<br/>
+   performance).</p></p>
+
+<p class="ename">&bull;&nbsp;&nbsp; Description</p>
+
+
+<p>
+   <p class="edef">Include the Description field in the response. (This can affect the call&rsquo;s performance.)</p></p>
+
+<p class="ename">&bull;&nbsp;&nbsp; TextDescription</p>
+
+
+<p>
+   <p class="edef">Include the text Description(no html tag) field in the response. (This can affect the call&rsquo;s performance.)</p></p>
+
+<p class="ename">&bull;&nbsp;&nbsp; ShippingCosts</p>
+
+
+<p>
+   <p class="edef">Include basic shipping costs in the<br/>
+   response. (Use GetShippingCosts to retrieve more<br/>
+   details.)</p></p>
+
+<p class="ename">&bull;&nbsp;&nbsp; ItemSpecifics</p>
+
+
+<p></p>
+
+<p class="edef">Include ItemSpecifics in the response.</p>
+
+
+<p></p>
+
+<p class="ename">&bull;&nbsp;&nbsp; Variations</p>
+
+
+<p></p>
+
+<p class="edef">Include Variations in the response.</p>
+
+
+<p>
+<br><br/>
+<br><br/>
+Use a comma to specify multiple values. (In this case,<br/>
+the results are cumulative.) See &ldquo;GetSingleItem Samples"<br/>
+for an example of how to use this field.<br><br/>
+<br><br/>
+See "Detail Controls&rdquo; for a complete list of<br/>
+fields that can be returned for each selector.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/includeSelector" title="includeSelector"></a>
+	<h3 class="subsubtitle method-title">includeSelector</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Defines standard subsets of fields to return within the<br/>
+response.<br><br/>
+<br><br/>
+If you don&rsquo;t specify this field, the call returns a default<br/>
+set of fields (see the &ldquo;Detail Controls&rdquo; link below). If you specify this field, the additional<br/>
+fields you retrieve can affect the call&rsquo;s response time<br/>
+(performance).<br><br/>
+<br><br/>
+<b>Applicable values</b>:</p>
+
+<p class="ename">&bull;&nbsp;&nbsp; Details</p>
+
+
+<p>
+   <p class="edef">Include most available fields in the<br/>
+   response (except fields that significantly affect the call's<br/>
+   performance).</p></p>
+
+<p class="ename">&bull;&nbsp;&nbsp; Description</p>
+
+
+<p>
+   <p class="edef">Include the Description field in the response. (This can affect the call&rsquo;s performance.)</p></p>
+
+<p class="ename">&bull;&nbsp;&nbsp; TextDescription</p>
+
+
+<p>
+   <p class="edef">Include the text Description(no html tag) field in the response. (This can affect the call&rsquo;s performance.)</p></p>
+
+<p class="ename">&bull;&nbsp;&nbsp; ShippingCosts</p>
+
+
+<p>
+   <p class="edef">Include basic shipping costs in the<br/>
+   response. (Use GetShippingCosts to retrieve more<br/>
+   details.)</p></p>
+
+<p class="ename">&bull;&nbsp;&nbsp; ItemSpecifics</p>
+
+
+<p></p>
+
+<p class="edef">Include ItemSpecifics in the response.</p>
+
+
+<p></p>
+
+<p class="ename">&bull;&nbsp;&nbsp; Variations</p>
+
+
+<p></p>
+
+<p class="edef">Include Variations in the response.</p>
+
+
+<p>
+<br><br/>
+<br><br/>
+Use a comma to specify multiple values. (In this case,<br/>
+the results are cumulative.) See &ldquo;GetSingleItem Samples"<br/>
+for an example of how to use this field.<br><br/>
+<br><br/>
+See "Detail Controls&rdquo; for a complete list of<br/>
+fields that can be returned for each selector.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *includeSelector</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Defines standard subsets of fields to return within the<br/>
+response.<br><br/>
+<br><br/>
+If you don&rsquo;t specify this field, the call returns a default<br/>
+set of fields (see the &ldquo;Detail Controls&rdquo; link below). If you specify this field, the additional<br/>
+fields you retrieve can affect the call&rsquo;s response time<br/>
+(performance).<br><br/>
+<br><br/>
+<b>Applicable values</b>:</p>
+
+<p class="ename">&bull;&nbsp;&nbsp; Details</p>
+
+
+<p>
+   <p class="edef">Include most available fields in the<br/>
+   response (except fields that significantly affect the call's<br/>
+   performance).</p></p>
+
+<p class="ename">&bull;&nbsp;&nbsp; Description</p>
+
+
+<p>
+   <p class="edef">Include the Description field in the response. (This can affect the call&rsquo;s performance.)</p></p>
+
+<p class="ename">&bull;&nbsp;&nbsp; TextDescription</p>
+
+
+<p>
+   <p class="edef">Include the text Description(no html tag) field in the response. (This can affect the call&rsquo;s performance.)</p></p>
+
+<p class="ename">&bull;&nbsp;&nbsp; ShippingCosts</p>
+
+
+<p>
+   <p class="edef">Include basic shipping costs in the<br/>
+   response. (Use GetShippingCosts to retrieve more<br/>
+   details.)</p></p>
+
+<p class="ename">&bull;&nbsp;&nbsp; ItemSpecifics</p>
+
+
+<p></p>
+
+<p class="edef">Include ItemSpecifics in the response.</p>
+
+
+<p></p>
+
+<p class="ename">&bull;&nbsp;&nbsp; Variations</p>
+
+
+<p></p>
+
+<p class="edef">Include Variations in the response.</p>
+
+
+<p>
+<br><br/>
+<br><br/>
+Use a comma to specify multiple values. (In this case,<br/>
+the results are cumulative.) See &ldquo;GetSingleItem Samples"<br/>
+for an example of how to use this field.<br><br/>
+<br><br/>
+See "Detail Controls&rdquo; for a complete list of<br/>
+fields that can be returned for each selector.</p>
+
+<p>type : NSString, wrapper for primitive string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_GetSingleItemRequestType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itemID" title="itemID"></a>
+	<h3 class="subsubtitle method-title">itemID</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The item ID that uniquely identifies the item listing<br/>
+for which to retrieve the data.<br><br/>
+<br><br/>
+You can determine an item&rsquo;s ID by calling findItemsAdvanced (&lt;a<br/>
+href=&ldquo;<a href="http://www.developer.ebay.com/DevZone/finding/CallRef/index.html">http://www.developer.ebay.com/DevZone/finding/CallRef/index.html</a>&rdquo;</p>
+
+<blockquote><p>Finding API</a>) or from the  eBay Web site.</p></blockquote>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *itemID</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The item ID that uniquely identifies the item listing<br/>
+for which to retrieve the data.<br><br/>
+<br><br/>
+You can determine an item&rsquo;s ID by calling findItemsAdvanced (&lt;a<br/>
+href=&ldquo;<a href="http://www.developer.ebay.com/DevZone/finding/CallRef/index.html">http://www.developer.ebay.com/DevZone/finding/CallRef/index.html</a>&rdquo;</p>
+
+<blockquote><p>Finding API</a>) or from the  eBay Web site.</p></blockquote>
+
+<p>type : NSString, wrapper for primitive string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_GetSingleItemRequestType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/variationSKU" title="variationSKU"></a>
+	<h3 class="subsubtitle method-title">variationSKU</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Variation-level SKU that uniquely identifes a variation within<br/>
+the listing identified by ItemID. Only applicable when the<br/>
+seller included variation-level SKU (Variation.SKU)<br/>
+values. Retrieves all the usual Item fields, but limits the<br/>
+Variations content to the specified variation.<br/>
+If not specified, the response includes all variations.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *variationSKU</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Variation-level SKU that uniquely identifes a variation within<br/>
+the listing identified by ItemID. Only applicable when the<br/>
+seller included variation-level SKU (Variation.SKU)<br/>
+values. Retrieves all the usual Item fields, but limits the<br/>
+Variations content to the specified variation.<br/>
+If not specified, the response includes all variations.</p>
+
+<p>type : NSString, wrapper for primitive string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_GetSingleItemRequestType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/variationSpecifics" title="variationSpecifics"></a>
+	<h3 class="subsubtitle method-title">variationSpecifics</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Name-value pairs that identify one or more variations within the<br/>
+listing identified by ItemID. Only applicable when the seller<br/>
+listed the item with variations. Retrieves all the usual Item<br/>
+fields, but limits the Variations content to the specified<br/>
+variation(s). If the specified pairs do not match any variation,<br/>
+eBay returns all variations.<br><br/>
+<br><br/>
+To retrieve only one variation, specify the full set of<br/>
+name/value pairs that match all the name-value pairs of one<br/>
+variation. <br><br/>
+<br><br/>
+To retrieve multiple variations (using a wildcard),<br/>
+specify one or more name/value pairs that partially match the<br/>
+desired variations. For example, if the listing contains<br/>
+variations for shirts in different colors and sizes, specify<br/>
+Color as Red (and no other name/value pairs) to retrieve<br/>
+all the red shirts in all sizes (but no other colors).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) Shopping_NameValueListArrayType *variationSpecifics</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Name-value pairs that identify one or more variations within the<br/>
+listing identified by ItemID. Only applicable when the seller<br/>
+listed the item with variations. Retrieves all the usual Item<br/>
+fields, but limits the Variations content to the specified<br/>
+variation(s). If the specified pairs do not match any variation,<br/>
+eBay returns all variations.<br><br/>
+<br><br/>
+To retrieve only one variation, specify the full set of<br/>
+name/value pairs that match all the name-value pairs of one<br/>
+variation. <br><br/>
+<br><br/>
+To retrieve multiple variations (using a wildcard),<br/>
+specify one or more name/value pairs that partially match the<br/>
+desired variations. For example, if the listing contains<br/>
+variations for shirts in different colors and sizes, specify<br/>
+Color as Red (and no other name/value pairs) to retrieve<br/>
+all the red shirts in all sizes (but no other colors).</p>
+
+<p>type : class <a href="../Classes/Shopping_NameValueListArrayType.html">Shopping_NameValueListArrayType</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Shopping_GetSingleItemRequestType.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 LeanSoft Technology. All rights reserved. (Last updated: 2013-03-30)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
